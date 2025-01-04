@@ -1,0 +1,341 @@
+.menu_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.menu_box .menu_card{
+    text-align: center;
+    width: 450px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.menu_box .menu_card h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.menu_box .menu_card p{
+    font-size: 13px;
+    text-align: center;
+}
+
+.menu_box .small_card{
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.menu_box .small_card .me{
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(119, 119, 119, 0.438);
+    width: 220px;
+    height: 350px;
+    padding: 30px;
+    padding-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu_box .small_card .me div{
+    height: 160px;
+    margin-bottom: 15px;
+    
+
+}
+
+.menu_box .small_card .me img{
+    width: 160px;
+    height: 160px;
+    margin-bottom: 15px;
+    
+
+}
+
+.menu_box .small-price{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu_box .hello{
+    background-color: rgb(255, 214, 176);
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.menu h1 span{
+    color: rgb(225, 109, 20);
+    margin-left: 15px;
+    font-family: mv boli;
+    
+
+}
+
+.yellow_btn{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100px;
+    font-weight: bold;
+    color: rgb(210,105,30);
+    line-height: 50px;
+    border: 1px solid rgb(210,105,30);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgb(250,120,69);
+}
+
+.yellow_btn:hover{
+    color: white;
+    background-color: rgb(210,105,30);
+    box-shadow: 0 10px 15px rgb(250,120,69);
+}
+
+.me .yellow_btn{
+    width: 120px;
+    line-height: 35px;
+}
+
+header {
+    background-color: rgb(248, 232, 217);
+    color: black;
+    padding: 15px 20px;
+    position: sticky; /* Makes it sticky */
+    top: 0; /* Sticks to the top of the page */
+    z-index: 1000; /* Keeps it above all other elements */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Left section (Logo) */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Right section (Dropdown and Cart) */
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between dropdown and cart button */
+}
+
+
+.search_bar {
+    margin-left: auto; /* Pushes the search bar to the left */
+    max-width: 300px;
+    display: flex;
+}
+
+#cuisine-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+/* Cart Icon */
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#cart-count {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+/* Cart Sidebar */
+.cart-sidebar {
+    position: fixed;
+    right: -350px; /* Hidden by default */
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ccc;
+    box-shadow: -5px 0 5px rgba(0,0,0,0.2);
+    transition: right 0.3s ease;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+.cart-sidebar.active {
+    right: 0;
+}
+
+.cart-sidebar h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cart-footer {
+    margin-top: 20px;
+}
+
+.cart-footer p {
+    margin: 5px 0;
+}
+
+.discount-code {
+    margin-top: 10px;
+}
+
+.hell-btn {
+    background-color: rgb(210,105,30);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.hell-btn:hover {
+    background-color: #e76a10;
+}
+
+/* Cart Styling */
+.cart-sidebar {
+    position: fixed;
+    right: -300px; /* Hidden initially */
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+/* When the cart is active, slide it in */
+.cart-sidebar.active {
+    right: 0;
+}
+
+/* Ensure dropdown and cart icon visibility */
+.cart-icon, #cuisine-dropdown {
+    z-index: 1100; /* Ensures it's above the cart */
+}
+
+.cart-sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: rgb(210, 105, 30);
+    font-weight: bold;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Adds separator between cart items */
+}
+
+#cart-items li:last-child {
+    border-bottom: none; /* Removes border from the last item */
+}
+
+.cart-footer {
+    margin-top: 30px;
+    border-top: 2px solid #ddd; /* Adds a top border above the footer */
+    padding-top: 20px;
+}
+
+.cart-footer p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.discount-code {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount-code input {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.discount-code button {
+    padding: 8px 15px;
+    background-color: rgb(210, 105, 30);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.discount-code button:hover {
+    background-color: #e76a10;
+}
+
+.hell-btn {
+    background-color: rgb(210, 105, 30);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hell-btn:hover {
+    background-color: #e76a10;
+}
+
+
+
+
